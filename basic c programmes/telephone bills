@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int c;
+    float b;
+    printf("enter the number of calls :");
+    scanf("%d",&c);
+    if(c<=300)
+    {
+        b=500;
+        printf("bill is :%f",b);
+    }
+    else if(c>=301&&c<=365)
+    {
+        b=((365-c)*(0.95))+500;
+        printf("bill is :%f",b);
+    }
+    else if (c<=455&&c>=365)
+    {
+        b=(65*0.95)+((c-365)*1.50)+500;
+        printf("bill is :%f",b);
+    }
+    else
+    {
+        b=(65*0.95)+(90*1.50)+((c-455)*2.25)+500;
+        printf("bill is :%f",b);
+    }
+    return 0;
+}

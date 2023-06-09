@@ -1,0 +1,39 @@
+REVERSE A NUMBER USING WHILE LOOP:
+
+
+#include<stdio.h>
+int main()
+{
+    int n,rev=0,rem;
+    printf("enter the number :");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        rem=n%10;
+        rev=(rev*10)+rem;
+        n=n/10;
+    }
+    printf("reverse number :%d",rev);
+}
+
+
+
+
+
+REVERSE A NUMBER USING FOR LOOP:
+
+
+#include<stdio.h>
+int main()
+{
+    int i,n,rem,rev=0;
+    printf("enter the number :");
+    scanf("%d",&n);
+    for(i=n;i>0;i=i/10)
+    {
+        rem=i%10;
+        rev=(rev*10)+rem;
+    }
+    printf("the reverse number is :%d",rev);
+    return 0;
+}

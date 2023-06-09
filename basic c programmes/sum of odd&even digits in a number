@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int n,rem,sum1,sum2;
+    printf("enter the number :");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        rem=n%10;
+        if(rem%2==0)
+        {
+            sum1=sum1+rem;
+        }
+        else
+        {
+            sum2=sum2+rem;
+        }
+        n=n/10;
+    }
+    printf("sum of even digits in a number:%d\n",sum1);
+    printf("sum of odd digits in a number:%d",sum2);
+}

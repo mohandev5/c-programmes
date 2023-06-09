@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int s;
+    float t;
+    printf("enter the salary :");
+    scanf("%d",&s);
+    if(s<=250000)
+    {
+        t=0;
+        printf("tax on salary :%f",t);
+    }
+    else if((s>=250001)&&(s<=500000))
+    {
+        t=((s-250000)*0.05);
+        printf("tax on salary :%f",t);
+    }
+    else if((s>=500001)&&(s<=1000000))
+    {
+        t=((250000*0.05)+(s-500000)*(0.10));
+        printf("tax on salary :%f",t);
+    }
+    else
+    {
+        t=((250000*0.05)+(500000*0.10)+(s-1000000)*(0.20));
+        printf("tax on salry :%f",t);
+    }
+}

@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int s,rem,rem1,rem2;
+    float h,x,n,y;
+    printf("enter the salary:");
+    scanf("%d",&s);
+    rem=s%100;
+    x=s-rem;
+    n=(x/100);
+    if(s>0)
+    {
+        h=0.01*s;
+        if(h==(n+0.50))
+        {
+            printf("health insurance:%.2f",h);
+        }
+        else if(h>(n+0.50))
+        {
+            rem1=(s/100);
+            y=((0.50-rem1)+h)/2;
+            printf("health insurance:%.2f",y);
+        }
+        else
+        {
+            rem2=(s/100);
+            y=((rem2-0.50)+h)/2;
+            printf("health iunsurance:%.2f",y);
+        }
+        
+    }
+}

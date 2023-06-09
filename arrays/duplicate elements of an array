@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,j,c=0;
+    printf("enter the array size :");
+    scanf("%d",&n);
+    int a[n];
+    printf("enter elements in an array :");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                c=c+1;
+            }
+        }
+    }
+    printf(" number of duplicated elements:%d",c);
+}

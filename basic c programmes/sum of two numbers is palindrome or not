@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,sum=0,temp,rem,rev=0;
+    printf("enter the two numbers :");
+    scanf("%d%d",&a,&b);
+    sum=a+b;
+    temp=sum;
+    while(sum!=0)
+    {
+        rem=sum%10;
+        rev=(rev*10)+rem;
+        sum=sum/10;
+    }
+    if(rev==temp)
+    {
+        printf("the sum is palindrome");
+    }
+    else
+    {
+        printf("the sum is not a palindrome");
+    }
+    return 0;
+}

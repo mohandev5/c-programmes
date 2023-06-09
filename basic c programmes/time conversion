@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+    int h,m,n,a,t;
+    printf("enter the hours:"); 
+    scanf("%d",&h);
+    printf("enter the minutes:");
+    scanf("%d",&m);
+    printf("enter '1'for railway time,'2'for normal time:");
+    scanf("%d",&a);
+    switch(a)
+    {
+        case 1:
+        if(h<12){
+              printf("enter1 for pm or 2 for am :");
+              scanf("%d",&t);
+              if(t==1)
+              {
+                n=(12+h);
+                printf("%d:%d",n,m);
+              }
+              else
+              {
+                  printf("%d:%d",h,m);
+              }
+        }
+        else
+        printf("you have already gave railway time");
+              break;
+        case 2:
+             if(h>12&& h<=24)
+    {
+        n=h-12;
+        printf("%d:%dpm",n,m);
+    }
+    else
+              {
+                  printf("%d:%d Am",h,m);
+              }
+              break;
+        default:
+              printf("enter valid number");
+              break;
+    }
+}

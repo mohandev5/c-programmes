@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    printf("enter the values :");
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if(a>b)
+    {
+        if(a>c)
+        {
+            if(a>d)
+            {
+                printf("A is biggest number :%da",a);
+            }
+        }
+    }
+    if(b>c)
+    {
+        if(b>d)
+        {
+            printf("B is biggest number :%d",b);
+        }
+    }
+    if(c>d)
+    {
+        printf("C is greatest number :%d",c);
+    }
+    else
+    {
+        printf("D is biggest number :%d",d);
+    }
+}

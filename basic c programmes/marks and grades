@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,m6;
+    char avg;
+    printf("enter the values :");
+    scanf("%d%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5,&m6);
+    if((m1>=35&&m1<=100)&&(m2>=35&&m2<=100)&&(m3>=35&&m3<=100)&&(m4>=35&&m4<=100)&&(m5>=35&&m5<=100)&&(m6>=35&&m6<=100))
+    {
+        avg=(m1+m2+m3+m4+m5+m6)/6;
+    }
+    if(avg>=60)
+    {
+        printf("you are passed in A grade");
+    }
+    else if(avg<=60&&avg>=50)
+    {
+        printf("you are passed in B grade");
+    }
+    else if(avg<=50&&avg>=35)
+    {
+        printf("you are passed in C grade");
+    }
+    else
+    {
+        printf("sorry you are failed");
+    }
+    return 0;
+}

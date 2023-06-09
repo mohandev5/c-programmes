@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,j,t=0;
+    printf("enter the array size :");
+    scanf("%d",&n);
+    int a[n];
+    printf("enter the elements in ana array :");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(a[j]>a[j+1])
+            {
+                t=a[j];
+                a[j]=a[j+1];
+                a[j+1]=t;
+            }
+        }
+    }
+        printf("%d\t",a[2]);
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char gender;
+    printf("enter your gender:M/m or F/f) :");
+    scanf("%c",&gender);
+    switch(gender)
+    {
+        case 'm':
+        case 'M':
+               printf("you are male");
+               break;
+        case 'F':
+        case 'f':
+               printf("you are female");
+               break;
+        default:
+            printf("unspecified gender");
+            break;
+              
+    }
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,sqr,temp,rem,rev;
+    printf("enter the niumber:");
+    scanf("%d",&n);
+    sqr=(n*n);
+    temp=sqr;
+    while(temp>0)
+    {
+        rem=temp%10;
+        rev=rev+rem;
+        temp=temp/10;
+    }
+    if(rev==n)
+    {
+        printf("yes it is a neon number");
+    }
+    else
+    {
+        printf("yes it is not neon number");
+    }
+}

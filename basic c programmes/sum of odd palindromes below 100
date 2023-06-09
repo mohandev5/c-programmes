@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int n,rev,rem,temp,sum=0;
+    for(n=10;n<=100;n++)
+    {
+        rev=0;
+        temp=n;
+        while(temp>0)
+        {
+        rem=temp%10;
+        rev=(rev*10)+rem;
+        temp=temp/10;
+        }
+        if(rev==n)
+        {
+          if(rev%2!=0)
+          {
+              sum=sum+rev;
+          }
+        }
+    }
+     printf("sum is :%d",sum);
+    return 0;
+}

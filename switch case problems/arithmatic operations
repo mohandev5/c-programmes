@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int a,b, add,mul,sub,n;
+    printf("enter two numbers :");
+    scanf("%d%d",&a,&b);
+    printf("enter the perfomance do you want :1.add 2.mul 3.sub");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:
+             add=a+b;
+             printf("addition :%d",add);
+             break;
+        case 2:
+             mul=a*b;
+             printf("multiplication :%d",mul);
+             break;
+        case 3:
+             sub=a-b;
+             printf("subtraction :%d",sub);
+             break;
+    }
+    return 0;
+}

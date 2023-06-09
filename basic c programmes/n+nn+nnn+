@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int n,sum=0,x,c=0;
+    printf("enter the values of number:");
+    scanf("%d",&n);
+    printf("enter the number of times:");
+    scanf("%d",&x);
+    while(c<x)
+    {
+        sum=sum+n;
+        c=c+1;
+        n=(n*10);
+    }
+    printf("%d",sum);
+}
+
